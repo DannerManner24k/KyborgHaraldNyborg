@@ -8,6 +8,11 @@ public class Functions {
 
         if (parserFunction == 2) {
             System.out.println("Running searchItem function:");
+            System.out.println("...");
+
+            Storage storage = new Storage();
+            storage.addStorage();
+
         }
     }
 
