@@ -10,7 +10,7 @@ public class Parser {
         reader = new Scanner(System.in);
     }
     public int getReader () {
-        try {
+       try {
             System.out.print("> ");
             functionKyborg = Integer.parseInt(reader.nextLine());
 

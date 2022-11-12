@@ -15,13 +15,17 @@ public class Storage {
     public ArrayList<Item> addStorage () {
         Scanner itemId = new Scanner(System.in);
         Scanner itemName = new Scanner(System.in);
-        System.out.println("> ");
-        String inputItemName = itemName.nextLine();
-        System.out.println("> ");
-        int inputItemId = Integer.parseInt(itemId.nextLine());
+        System.out.println("Enter item ID:");
+        System.out.print("> ");
+        int inputItemId = Integer.parseInt(itemId.next());
+
+        System.out.println("Enter item name:");
+        System.out.print("> ");
+        String inputItemName = itemName.next();
 
 
-        Item items = new Item(inputItemName, inputItemId);
+
+        Item items = new Item(inputItemId, inputItemName);
         itemArrayList.add(items);
         System.out.println();
         System.out.println(toString());

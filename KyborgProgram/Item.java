@@ -3,16 +3,17 @@ package KyborgProgram;
 import java.util.ArrayList;
 
 public class Item {
-    private String name;
     private int id;
+    private String name;
 
-    public Item (String name, int id) {
-        this.name = name;
+
+    public Item (int id, String name) {
         this.id = id;
+        this.name = name;
     }
 
     @Override
     public String toString () {
-        return "Item name: " + name +"\nItem ID: " + id;
+        return "Item ID: " + id +"\nItem name: " + name;
     }
 }
